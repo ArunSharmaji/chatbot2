@@ -1,0 +1,233 @@
+.bar1{
+	width: 100px; 
+     height: 30px;
+     background:#9ADD57;
+     position: absolute; 
+     top: 60%;
+     transform-origin: 50%; 
+     z-index: -1; 
+     left: 7%;
+    animation: shadow2 5.5s  ;   
+}
+.shadowbar1 {
+	text-align:center;
+width: 100px;
+height: 4px;
+background-color: rgba(0, 0, 0, 0.5); 
+position: absolute; 
+top: 65%;
+transform-origin: 50%; 
+z-index: -1; 
+left: 10%;
+filter: blur(1px);
+animation: shadow3  5.5s ;
+}
+body {
+background-image:url('D.jpg');
+      background-repeat:no-repeat;
+      margin: 0%;
+      padding: 0%;
+      width:100%;
+      height:100%;
+      background-size: cover;
+      background-attachment: fixed;
+}
+.container {
+width: 200px; 
+height: 60px;
+position: absolute; 
+/*background:green;*/
+left: 50%;
+top: 72%;
+transform: translate(-50%, -50%);
+}
+.circle {
+width: 20px;
+height: 20px;
+position: absolute; 
+border-radius: 50%;
+background-color: #000000; 
+left: 15%;
+transform-origin: 50%; 
+animation: circle .5s alternate infinite ease;
+}
+@keyframes circle {
+0%{
+top: 60px; 
+height: 5px;
+border-radius: 50px 50px 25px 25px;
+transform: scaleX(1.7);
+} 
+40% {
+height: 20px;
+border-radius: 50%; 
+transform: scaleX(1);
+} 
+100% {
+top: 0%;
+}
+}
+.circle:nth-child(2) { 
+left: 45%;
+animation-delay: 0.2s;
+}
+.circle:nth-child(3) {
+left: auto; 
+right: 15%;
+animation-delay: 0.3s;
+}
+.shadow {
+width: 20px;
+height: 4px;
+border-radius: 50%;
+background-color: rgba(0, 0, 0, 0.5); 
+position: absolute; 
+top: 62px;
+transform-origin: 50%; 
+z-index: -1; 
+left: 15%;
+filter: blur(1px);
+animation: shadow 0.5s alternate infinite ease;
+}
+@keyframes shadow {
+0%{
+transform: scaleX(1.5);
+} 40% {
+transform: scaleX(1); 
+opacity: 0.7;
+} 100% {
+transform: scaleX(0.2);
+opacity:0.4;
+}
+}
+.shadow:nth-child(4) { 
+left: 45%;
+animation-delay: 0.2s;
+}
+.shadow:nth-child(5) {
+left: auto; 
+right: 15%;
+animation-delay: 0.3s;
+}
+.fursh{
+	  transform: translateX(500%);
+      transform: translateY(160%);
+      position: absolute; 
+      top:400px;
+      height: 5px;
+      width: 150px;
+      border-bottom: 50px solid #000000;
+      border-left: 130px solid transparent;
+      border-right: 130px solid transparent;
+}
+.lod{
+	top:-20px;
+	text-align:center;
+    font-family:Helvetica;
+    font-weight:bold;
+    color:cornsilk;
+}
+.bar{
+	width: 200px; 
+     height: 60px;
+     position: absolute; 
+     background:green;
+     left: 28%;
+     top: 40%;
+    transform: translate(-50%, -50%);
+    animation: shadow1 0.5s alternate infinite ease;
+}
+.lod1{
+	text-align:center;
+    font-family:sans-serif,timesnewroman,Helvetica;
+    font-weight:bold;
+    color:cornsilk;
+    margin-top:20px;
+}
+.lod2{
+	text-align:center;
+    font-family:sans-serif,timesnewroman,Helvetica;
+    font-weight:bold;
+    color:cornsilk;
+    margin-top:5px;
+}
+@keyframes shadow1{
+0%{
+transform: scaleX(1.5);
+} 40% {
+transform: scaleX(1); 
+opacity: 0.7;
+} 100% {
+transform: scaleX(0.2);
+opacity:0.4;
+}}
+@keyframes shadow2{
+0%{
+border-right: 10px solid #9ADD57;
+
+} 10% { 
+border-right: 20px solid #9ADD57;
+
+} 20% {
+border-right: 40px solid #9ADD57;
+
+}30%{
+border-right: 60px solid #9ADD57;
+
+} 40% { 
+border-right: 70px solid #9ADD57;
+
+} 50% {
+border-right: 80px solid #9ADD57;
+
+}60%{
+border-right: 100px solid #9ADD57;
+
+} 70% { 
+border-right: 120px solid #9ADD57;
+
+} 80% {
+border-right: 140px solid #9ADD57;
+
+}90%{
+border-right: 150px solid #9ADD57;
+
+} 100% {
+border-right: 200px solid #9ADD57;
+
+}}
+@keyframes shadow3{
+0%{
+border-right: 10px solid transparent;
+
+} 10% { 
+border-right: 20px solid transparent;
+
+} 20% {
+border-right: 40px solid transparent;
+
+}30%{
+border-right: 60px solid transparent;
+
+} 40% { 
+border-right: 70px solid transparent;
+
+} 50% {
+border-right: 80px solid transparent;
+
+}60%{
+border-right: 100px solid transparent;
+
+} 70% { 
+border-right: 120px solid transparent;
+
+} 80% {
+border-right: 140px solid transparent;
+
+}90%{
+border-right: 150px solid transparent;
+
+} 100% {
+border-right: 200px solid transparent;
+
+}}
