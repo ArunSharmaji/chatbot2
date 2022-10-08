@@ -1,0 +1,113 @@
+*
+{
+     margin: 0%;
+     padding: 0%;
+     box-sizing: border-box;
+}
+
+body{/*
+	height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(d.jpg);
+    background-position: center;
+    background-size: cover;
+    position:absolute;
+     */ 
+      background-image:url('D.jpg');
+      background-repeat:no-repeat;
+      margin: 0%;
+      padding: 0%;
+      width:100%;
+      height:100%;
+      background-size: cover;
+      background-attachment: fixed;
+      
+}
+
+.textbg{
+	bottom:0;
+    height: 50px;
+    width: 100%;
+    background-color:#848484;
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+}
+.textbg input{
+	margin-top:5px;
+	margin-left:10px;
+	float:left;
+    border:none;
+    box-sizing:box-border;
+    border-radius:10px;
+    padding:10px;
+    outline:none;
+    color:#ffffff;
+    background-color:#000;
+    background-size: cover;
+    position: fixed;
+}
+.text span{
+    line-height:2.5em;
+    display:inline-block;
+    background:#FFA8EF;
+    padding:10px;
+    border-radius:20px;
+    border-bottom-left-radius:0px;
+    max-width:80%;
+    margin-left:10px;
+}
+
+.userText {
+    color: white;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: right;
+    clear: both;
+}
+
+.userText span {
+    line-height: 1.5em;
+    display: inline-block;
+    background: #5ca6fa;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-right-radius: 2px;
+    max-width: 80%;
+    margin-right: 10px;
+    animation: floatup .5s forwards
+}
+
+.botText {
+    color: #000;
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+}
+
+.botText span {
+    line-height: 1.5em;
+    display: inline-block;
+    background: #e0e0e0;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-left-radius: 2px;
+    max-width: 80%;
+    margin-left: 10px;
+    animation: floatup .5s forwards
+}
+/*span{transform:translateY(650px)}*/
+.but input{
+   margin-left:82%;
+}
+.but input:hover{
+  color:326DBB;
+}
+
+@media screen and (max-width:600px) {
+    .full-chat-block {
+        width: 100%;
+        border-radius: 0px;
+    }
