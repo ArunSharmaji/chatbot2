@@ -67,8 +67,10 @@ function buttonSendText(sampleText) {
 
 function getBotResponse(input) {
     //rock paper scissors
+    var word = ['rock','paper','scissors'];
+    
     if (input == "rock") {
-        return "paper";
+        return (word[Math.floor(Math.random()*word.length)]);
     } else if (input == "paper") {
         return "scissors";
     } else if (input == "scissors") {
