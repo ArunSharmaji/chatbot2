@@ -10,7 +10,7 @@ function getTime() {
 }
 // Gets the first message
 function firstBotMessage() {
-    let firstMessage = "hi here Arish and what about you";
+    let firstMessage = "hi here Arish and what about you !, i can play 'rock','paper','scissors' , write your choise which you want in small letters";
     document.getElementById("botStarterMessage1").innerHTML = '<p id="botStarterMessage1" class="botText" style="color:crimson;"><span>'+firstMessage+'</span></p>';
     let time = getTime();
  document.getElementById("botStarterMessage").innerHTML = '<h5 class="time">' + time + '</h5>';
@@ -66,15 +66,47 @@ function buttonSendText(sampleText) {
 
 
 function getBotResponse(input) {
-    //rock paper scissors
+  //rock paper scissors
     var word = ['rock','paper','scissors'];
     
     if (input == "rock") {
-        return (word[Math.floor(Math.random()*word.length)]);
-    } else if (input == "paper") {
-        return "scissors";
-    } else if (input == "scissors") {
-        return "rock";
+        rand = word[Math.floor(Math.random()*word.length)] ;
+        if(rand == "rock"){
+            result = rand+"  Match Draw ";   
+        }
+        else if(rand == "paper"){
+            result = rand+" My Victory";
+        }
+        else if(rand == "scissors"){
+            result = rand+" oooh My Bad Luck";
+        }
+        return (result);
+    }
+     else if (input == "paper") {
+        rand = word[Math.floor(Math.random()*word.length)] ;
+        if(rand == "rock"){
+            result = rand+" oooh My Bad Luck";   
+        }
+        else if(rand == "paper"){
+            result = rand+"  Match Draw ";
+        }
+        else if(rand == "scissors"){
+            result = rand+" My Victory";
+        }
+        return (result);
+    }
+     else if (input == "scissors") {
+        rand = word[Math.floor(Math.random()*word.length)] ;
+        if(rand == "rock"){
+            result = rand+" My Victory";   
+        }
+        else if(rand == "paper"){
+            result = rand+" oooh My Bad Luck";
+        }
+        else if(rand == "scissors"){
+            result = rand+"  Match Draw ";
+        }
+        return (result);
     }
 
     // Simple responses
